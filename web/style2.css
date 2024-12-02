@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #007bff, #6f42c1);
+}
+
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.register-container:hover {
+    transform: translateY(-5px);
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+    font-weight: bold;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-form label {
+    text-align: left;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.register-button {
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background: linear-gradient(90deg, #007bff, #6f42c1);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-button:hover {
+    background: linear-gradient(90deg, #6f42c1, #007bff);
+}
+
+.register-form p {
+    font-size: 0.85em;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.register-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    color: #0056b3;
+}
+
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #007bff;
+}
+
+/* Heading and Paragraph Styles */
+.modal-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.8em;
+    color: #4caf50;
+}
+
+.modal-content p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #aaa;
+}
